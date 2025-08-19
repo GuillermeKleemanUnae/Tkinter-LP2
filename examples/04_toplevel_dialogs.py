@@ -232,7 +232,7 @@ class ToplevelsDialogDemo:
             text="⚠️ Advertencia",
             font=("Arial", 9),
             bg='#F7DC6F',
-            fg='#FFFFFF',
+            fg='#000',
             command=lambda: messagebox.showwarning("Advertencia", "Este es un mensaje de advertencia"),
             width=15
         ).grid(row=0, column=1, padx=5, pady=3)
@@ -985,7 +985,7 @@ class ToplevelsDialogDemo:
         dialog = tk.Toplevel(self.root)
         dialog.title("Diálogo Personalizado")
         dialog.geometry("400x300")
-        dialog.configure(bg='#FFF3E0')
+        dialog.configure(bg='#000')
         dialog.resizable(False, False)
         
         # Hacer modal
@@ -1005,21 +1005,21 @@ class ToplevelsDialogDemo:
             dialog,
             text="📋 Formulario Personalizado",
             font=("Arial", 14, "bold"),
-            bg='#FFF3E0',
+            bg='#000',
             fg='#FFFFFF'
         ).pack(pady=15)
         
         # Frame para formulario
-        form_frame = tk.Frame(dialog, bg='#FFF3E0')
+        form_frame = tk.Frame(dialog, bg='#000')
         form_frame.pack(fill='both', expand=True, padx=30)
         
         # Nombre
-        tk.Label(form_frame, text="Nombre:", bg='#FFF3E0', font=("Arial", 10, "bold")).pack(anchor='w')
+        tk.Label(form_frame, text="Nombre:", bg='#000', font=("Arial", 10, "bold")).pack(anchor='w')
         tk.Entry(form_frame, textvariable=name_var, font=("Arial", 11), width=30).pack(fill='x', pady=(0, 10))
         
         # Edad
-        tk.Label(form_frame, text="Edad:", bg='#FFF3E0', font=("Arial", 10, "bold")).pack(anchor='w')
-        age_frame = tk.Frame(form_frame, bg='#FFF3E0')
+        tk.Label(form_frame, text="Edad:", bg='#000', font=("Arial", 10, "bold")).pack(anchor='w')
+        age_frame = tk.Frame(form_frame, bg='#000')
         age_frame.pack(fill='x', pady=(0, 10))
         tk.Scale(
             age_frame,
@@ -1027,12 +1027,12 @@ class ToplevelsDialogDemo:
             to=100,
             orient='horizontal',
             variable=age_var,
-            bg='#FFF3E0'
+            bg='#000'
         ).pack(fill='x')
         
         # Género
-        tk.Label(form_frame, text="Género:", bg='#FFF3E0', font=("Arial", 10, "bold")).pack(anchor='w')
-        gender_frame = tk.Frame(form_frame, bg='#FFF3E0')
+        tk.Label(form_frame, text="Género:", bg='#000', font=("Arial", 10, "bold")).pack(anchor='w')
+        gender_frame = tk.Frame(form_frame, bg='#000')
         gender_frame.pack(anchor='w', pady=(0, 15))
         
         for value, text in [("masculino", "Masculino"), ("femenino", "Femenino"), ("otro", "Otro")]:
@@ -1041,7 +1041,7 @@ class ToplevelsDialogDemo:
                 text=text,
                 variable=gender_var,
                 value=value,
-                bg='#FFF3E0'
+                bg='#000'
             ).pack(side='left', padx=(0, 15))
             
         # Botones
@@ -1060,7 +1060,7 @@ class ToplevelsDialogDemo:
             dialog.grab_release()
             dialog.destroy()
             
-        button_frame = tk.Frame(dialog, bg='#FFF3E0')
+        button_frame = tk.Frame(dialog, bg='#000')
         button_frame.pack(fill='x', padx=30, pady=15)
         
         tk.Button(
