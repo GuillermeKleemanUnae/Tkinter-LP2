@@ -1,11 +1,17 @@
-# No hay dependencias externas requeridas para este proyecto
+# Dependencias para el proyecto de Base de Datos con Tkinter
 # Tkinter viene incluido con Python por defecto
 
-# Sin embargo, si quieres agregar dependencias en el futuro, 
-# puedes instalar con: pip install -r requirements.txt
+# Base de datos y reportes
+sqlite3             # Base de datos SQLite (incluida en Python)
+reportlab==4.0.4    # Para generación de reportes PDF
+pandas==2.0.3       # Para manejo de datos y exportación
+openpyxl==3.1.2     # Para exportar a Excel
 
-# Ejemplo de dependencias que podrías agregar:
-# pytest==7.4.0          # Para pruebas unitarias
-# pillow==10.0.0         # Para manejo de imágenes
-# pandas==2.0.3          # Para manejo de datos
-# openpyxl==3.1.2        # Para exportar a Excel
+# Testing
+pytest==7.4.0       # Para pruebas unitarias
+
+# Interfaz mejorada (opcional)
+pillow==10.0.0      # Para manejo de imágenes en la GUI
+ttkthemes==3.2.2    # Temas adicionales para tkinter
+
+# Instalar con: pip install -r requirements.txt

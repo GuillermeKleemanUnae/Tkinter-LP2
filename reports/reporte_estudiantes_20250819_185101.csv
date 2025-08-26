@@ -1,0 +1,7 @@
+ID,Nombre,Apellido,Email,Teléfono,Estado,Fecha Inscripción,Cursos Inscritos,Cursos Completados,Promedio
+2,María,García,maria.garcia@email.com,123-456-7891,active,2025-08-19,2,2,85.25
+3,Carlos,López,carlos.lopez@email.com,123-456-7892,active,2025-08-19,1,1,88.0
+4,Ana,Martínez,ana.martinez@email.com,123-456-7893,active,2025-08-19,0,0,N/A
+1,Juan,Pérez,juan.perez@email.com,123-456-7890,active,2025-08-19,2,2,87.75
+5,Luis,Rodríguez,luis.rodriguez@email.com,123-456-7894,active,2025-08-19,0,0,N/A
+12,Prueba,Test,prueba@test.com,123-456-7890,active,2025-08-19,0,0,N/A
